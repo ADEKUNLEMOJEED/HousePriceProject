@@ -82,7 +82,6 @@ st.markdown("<h1 style = 'color: #0F0F0F; text-align: center; font-family:  Helv
 st.markdown("<h4 style = 'margin: -25px; color: #B2533E; text-align: center; font-family: cursive'>BUILT BY ADEKUNLE MOJEED</h4>", unsafe_allow_html=True)
 
 st.image('pngwing.com (3).png',width = 500)
-
 password = ['one', 'two', 'three']
 username = st.text_input('Pls enter your username')
 passes = st.text_input('Pls input password')
@@ -92,11 +91,12 @@ if passes in password:
     print(f'Welcome {username}, Pls enjoy your usage as a registered user')
 else:
     st.error('You are not a registered user. But you have three trials')
+    
 
 st.sidebar.image('pngwing.com (1).png', caption = f'Welcome {username}')
 
 dx = data[['LotArea', 'LotFrontage', 'MSSubClass', 'BsmtUnfSF', 'GrLivArea', 'GarageArea', 'BsmtFinSF1']]
-# st.write(dx.head())
+st.write(dx.head())
 
 st.markdown("<br><br>",unsafe_allow_html=True)
 #Input Feature
